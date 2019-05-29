@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: springcloud-config-client
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: wangshukun
+Implementation-Vendor-Id: com.qsf.springcloud
+Build-Jdk: 1.8.0-adoptopenjdk
+Implementation-URL: http://projects.spring.io/spring-boot/springcloud-
+ root/springcloud-config-client/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

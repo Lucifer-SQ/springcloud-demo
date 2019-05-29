@@ -1,0 +1,16 @@
+package com;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+@CrossOrigin
+public class SuccessController {
+    @RequestMapping(value = "/success")
+	public String success(){
+	    return "common server3 success";
+	}
+}
+

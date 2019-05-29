@@ -1,0 +1,12 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: springcloud-common-server1
+ 
+#注册中心指向start    
+eureka:
+  client: 
+    service-url: 
+      defaultZone: http://admin:123456@192.168.24.135:8888/eureka/
+#注册中心指向end

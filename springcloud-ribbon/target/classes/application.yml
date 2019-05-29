@@ -1,0 +1,16 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: Ribbon-Consumer
+#providers这个是自己命名的，ribbon,listOfServer这两个是规定的
+providers:
+  ribbon:
+    listOfServers: localhost:8003,localhost:8005
+
+#注册中心指向start    
+eureka:
+  client: 
+    service-url: 
+      defaultZone: http://admin:123456@192.168.24.135:8888/eureka/
+#注册中心指向end

@@ -1,0 +1,21 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: springcloud-config-client
+  cloud:
+    config:
+      discovery:
+        enabled: true # 通过服务发现的方式去找配置中心
+        service-id: springcloud-config # 配置中心的名字，直接配置名称可以在配置中心集群的时候实现负载均衡
+      profile: test # 对应配置中心文件的${profile}部分
+
+#加入注册中心，实现高可用
+eureka:
+  client:
+    service-url:
+       defaultZone: http://admin:123456@192.168.24.135:8888/eureka/
+#management:
+  #security:
+    #enabled: false
+

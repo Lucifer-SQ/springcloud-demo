@@ -1,0 +1,17 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: springcloud-common1
+ribbon:
+  eureka:
+    enabled: true 
+#注册中心指向start    
+eureka:
+  instance:
+    instance-id: springcloud-common1
+    appname: ${spring.application.name}
+  client: 
+    service-url: 
+      defaultZone: http://admin:123456@127.0.0.1:8888/eureka/
+#注册中心指向end
